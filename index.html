@@ -14,6 +14,29 @@ body {
 </style>
 </head>
 <body>
-<iframe src="http://schnell-muskeln-aufbauen.de/" width="810" height="1000" scrolling="yes" frameborder="0"></iframe> 
+<iframe src="http://schnell-muskeln-aufbauen.de/" width="810" height="1000" scrolling="yes" frameborder="0"></iframe>
+<div id="fb-root"></div>
+<script type="text/javascript">
+	window.fbAsyncInit = function() {
+		FB.init({
+		  appId  : '195646697137509',
+		  status : true,
+		  cookie : true,
+		  xfbml  : true,
+		  channelUrl: document.location.protocol + '//iframehost.com/channel_http.html'
+		}); 
+		FB.Canvas.setSize();
+		FB.Canvas.setAutoGrow();
+		if (typeof window.onFacebookLoad == 'function')
+			onFacebookLoad();
+	};
+
+	(function() {
+		var e = document.createElement('script');
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	}());
+</script>
 </body>
 </html>
